@@ -1,0 +1,38 @@
+WARNING:tensorflow:From /opt/conda/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1659, in _create_c_op
+    c_op = c_api.TF_FinishOperation(op_desc)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Dimensions must be equal, but are 26 and 11 for 'p_re_lu_1/mul' (op: 'Mul') with input shapes: [26,26,32], [?,11,11,64].
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "fashion_train.py", line 75, in <module>
+    model.add(config.activation_layers)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/training/checkpointable/base.py", line 442, in _method_wrapper
+    method(self, *args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/engine/sequential.py", line 180, in add
+    output_tensor = layer(self.outputs[0])
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/engine/base_layer.py", line 554, in __call__
+    outputs = self.call(inputs, *args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/layers/advanced_activations.py", line 151, in call
+    neg = -self.alpha * K.relu(-inputs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py", line 812, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py", line 1078, in _mul_dispatch
+    return gen_math_ops.mul(x, y, name=name)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/ops/gen_math_ops.py", line 5860, in mul
+    "Mul", x=x, y=y, name=name)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 3300, in create_op
+    op_def=op_def)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1823, in __init__
+    control_input_ops)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1662, in _create_c_op
+    raise ValueError(str(e))
+ValueError: Dimensions must be equal, but are 26 and 11 for 'p_re_lu_1/mul' (op: 'Mul') with input shapes: [26,26,32], [?,11,11,64].

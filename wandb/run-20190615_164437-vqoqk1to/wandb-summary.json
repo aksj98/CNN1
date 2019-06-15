@@ -1,0 +1,226 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "conv2d_input",
+                "id": "conv2d_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    28,
+                    28,
+                    1
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "conv2d",
+                "id": "conv2d",
+                "class_name": "Conv2D",
+                "output_shape": [
+                    null,
+                    26,
+                    26,
+                    32
+                ],
+                "num_parameters": 320
+            },
+            {
+                "name": "max_pooling2d",
+                "id": "max_pooling2d",
+                "class_name": "MaxPooling2D",
+                "output_shape": [
+                    null,
+                    13,
+                    13,
+                    32
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dropout",
+                "id": "dropout",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    13,
+                    13,
+                    32
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "conv2d_1",
+                "id": "conv2d_1",
+                "class_name": "Conv2D",
+                "output_shape": [
+                    null,
+                    11,
+                    11,
+                    64
+                ],
+                "num_parameters": 18496
+            },
+            {
+                "name": "max_pooling2d_1",
+                "id": "max_pooling2d_1",
+                "class_name": "MaxPooling2D",
+                "output_shape": [
+                    null,
+                    5,
+                    5,
+                    64
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dropout_1",
+                "id": "dropout_1",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    5,
+                    5,
+                    64
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten",
+                "id": "flatten",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    1600
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense",
+                "id": "dense",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    128
+                ],
+                "num_parameters": 204928
+            },
+            {
+                "name": "dropout_2",
+                "id": "dropout_2",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    128
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    10
+                ],
+                "num_parameters": 1290
+            }
+        ],
+        "edges": [
+            [
+                "conv2d_input",
+                "conv2d"
+            ],
+            [
+                "conv2d",
+                "max_pooling2d"
+            ],
+            [
+                "max_pooling2d",
+                "dropout"
+            ],
+            [
+                "dropout",
+                "conv2d_1"
+            ],
+            [
+                "conv2d_1",
+                "max_pooling2d_1"
+            ],
+            [
+                "max_pooling2d_1",
+                "dropout_1"
+            ],
+            [
+                "dropout_1",
+                "flatten"
+            ],
+            [
+                "flatten",
+                "dense"
+            ],
+            [
+                "dense",
+                "dropout_2"
+            ],
+            [
+                "dropout_2",
+                "dense_1"
+            ]
+        ]
+    },
+    "val_loss": 0.2732574956893921,
+    "_runtime": 152.85528683662415,
+    "_step": 9,
+    "_timestamp": 1560617230.1146648,
+    "acc": 0.8881833553314209,
+    "epoch": 9,
+    "val_acc": 0.8978000283241272,
+    "examples": {
+        "width": 28,
+        "height": 28,
+        "count": 36,
+        "_type": "images",
+        "captions": [
+            "Pullover",
+            "T-shirt/top",
+            "Trouser",
+            "Bag",
+            "Bag",
+            "T-shirt/top",
+            "Shirt",
+            "Coat",
+            "Trouser",
+            "Sneaker",
+            "Sneaker",
+            "Ankle boot",
+            "Sandal",
+            "T-shirt/top",
+            "Pullover",
+            "Bag",
+            "Sneaker",
+            "Shirt",
+            "Dress",
+            "Ankle boot",
+            "Sneaker",
+            "Pullover",
+            "Sneaker",
+            "Bag",
+            "Dress",
+            "Ankle boot",
+            "Coat",
+            "Coat",
+            "Ankle boot",
+            "Sneaker",
+            "Bag",
+            "Shirt",
+            "Coat",
+            "Coat",
+            "Shirt",
+            "Shirt"
+        ]
+    },
+    "loss": 0.30319665522972744
+}

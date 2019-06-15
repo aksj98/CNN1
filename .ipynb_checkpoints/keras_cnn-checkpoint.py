@@ -1,4 +1,4 @@
-*# from lukas/mlclass
+# from lukas/mlclass
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Dense, Flatten
@@ -37,7 +37,7 @@ y_test = np_utils.to_categorical(y_test)
 num_classes = y_test.shape[1]
 labels = range(10)
 
-#- build model
+# build model
 model = Sequential()
 model.add(Conv2D(32,
                  (config.first_layer_conv_width, config.first_layer_conv_height),

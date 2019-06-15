@@ -1,0 +1,116 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "flatten_input",
+                "id": "flatten_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    28,
+                    28,
+                    1
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten",
+                "id": "flatten",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense",
+                "id": "dense",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    10
+                ],
+                "num_parameters": 7850
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    10
+                ],
+                "num_parameters": 110
+            }
+        ],
+        "edges": [
+            [
+                "flatten_input",
+                "flatten"
+            ],
+            [
+                "flatten",
+                "dense"
+            ],
+            [
+                "dense",
+                "dense_1"
+            ]
+        ]
+    },
+    "examples": {
+        "width": 28,
+        "height": 28,
+        "count": 36,
+        "_type": "images",
+        "captions": [
+            "Dress",
+            "Trouser",
+            "Ankle boot",
+            "Pullover",
+            "T-shirt/top",
+            "Shirt",
+            "T-shirt/top",
+            "Trouser",
+            "Trouser",
+            "Trouser",
+            "Dress",
+            "T-shirt/top",
+            "Shirt",
+            "Ankle boot",
+            "T-shirt/top",
+            "Dress",
+            "Bag",
+            "Pullover",
+            "T-shirt/top",
+            "T-shirt/top",
+            "Shirt",
+            "Sandal",
+            "Ankle boot",
+            "Coat",
+            "Ankle boot",
+            "Ankle boot",
+            "Pullover",
+            "Sandal",
+            "Coat",
+            "Dress",
+            "Pullover",
+            "Sandal",
+            "Shirt",
+            "Trouser",
+            "Trouser",
+            "Trouser"
+        ]
+    },
+    "loss": 0.3866028172016144,
+    "acc": 0.865149974822998,
+    "val_acc": 0.845300018787384,
+    "_step": 9,
+    "_timestamp": 1560616079.5023806,
+    "_runtime": 85.46124029159546,
+    "val_loss": 0.43472315464019773,
+    "epoch": 9
+}

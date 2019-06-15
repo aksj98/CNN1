@@ -1,0 +1,35 @@
+diff --git a/fashion_train.py b/fashion_train.py
+index 548819c..d6e5a09 100644
+--- a/fashion_train.py
++++ b/fashion_train.py
+@@ -31,7 +31,10 @@ run = wandb.init(project="fashion")
+ (X_train, y_train), (X_test, y_test) = fashion_mnist.load_data()
+ img_width = X_train.shape[1]
+ img_height = X_train.shape[2]
+-
++X_train = X_train.reshape(
++    X_train.shape[0], config.img_width, config.img_height, 1)
++X_test = X_test.reshape(
++    X_test.shape[0], config.img_width, config.img_height, 1)
+ # one hot encode outputs
+ y_train = to_categorical(y_train)
+ y_test = to_categorical(y_test)
+diff --git a/keras_cnn.py b/keras_cnn.py
+index 879d732..f955c59 100644
+--- a/keras_cnn.py
++++ b/keras_cnn.py
+@@ -1,4 +1,4 @@
+-# from lukas/mlclass
++*# from lukas/mlclass
+ from keras.datasets import mnist
+ from keras.models import Sequential
+ from keras.layers import Conv2D, MaxPooling2D, Dropout, Dense, Flatten
+@@ -37,7 +37,7 @@ y_test = np_utils.to_categorical(y_test)
+ num_classes = y_test.shape[1]
+ labels = range(10)
+ 
+-# build model
++#- build model
+ model = Sequential()
+ model.add(Conv2D(32,
+                  (config.first_layer_conv_width, config.first_layer_conv_height),

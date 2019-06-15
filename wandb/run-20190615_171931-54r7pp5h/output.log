@@ -1,0 +1,11 @@
+WARNING:tensorflow:From /opt/conda/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Traceback (most recent call last):
+  File "fashion_train.py", line 70, in <module>
+    model.add(config.activation_layers)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/training/checkpointable/base.py", line 442, in _method_wrapper
+    method(self, *args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/engine/sequential.py", line 145, in add
+    'Found: ' + str(layer))
+TypeError: The added layer must be an instance of class Layer. Found: <class 'tensorflow.python.keras.layers.advanced_activations.PReLU'>
