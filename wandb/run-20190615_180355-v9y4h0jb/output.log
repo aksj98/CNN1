@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "fashion_train.py", line 73, in <module>
+    activation=config.activation))
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/layers/convolutional.py", line 486, in __init__
+    activation=activations.get(activation),
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/activations.py", line 211, in get
+    return deserialize(identifier)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/activations.py", line 202, in deserialize
+    printable_module_name='activation function')
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 212, in deserialize_keras_object
+    function_name)
+ValueError: Unknown activation function:swish

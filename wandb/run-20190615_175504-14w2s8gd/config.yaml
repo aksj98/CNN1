@@ -1,0 +1,74 @@
+wandb_version: 1
+
+activation:
+  desc: null
+  value: linear
+activation_layers:
+  desc: null
+  value: !!python/object:keras.layers.advanced_activations.ELU
+    _built: false
+    _inbound_nodes: []
+    _initial_weights: null
+    _losses: []
+    _non_trainable_weights: []
+    _outbound_nodes: []
+    _per_input_losses: {}
+    _per_input_updates: {}
+    _trainable_weights: []
+    _updates: []
+    alpha: !!python/object/apply:numpy.core.multiarray._reconstruct
+      args:
+      - !!python/name:numpy.ndarray ''
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple []
+      - !!python/object/apply:numpy.dtype
+        args:
+        - f4
+        - 0
+        - 1
+        state: !!python/tuple
+        - 3
+        - <
+        - null
+        - null
+        - null
+        - -1
+        - -1
+        - 0
+      - false
+      - !!binary |
+        AACAPw==
+    input_spec: null
+    name: elu_1
+    stateful: false
+    supports_masking: true
+    trainable: true
+dense_layer_size:
+  desc: null
+  value: 128
+dropout:
+  desc: null
+  value: 0.2
+epochs:
+  desc: null
+  value: 10
+first_layer_conv_height:
+  desc: null
+  value: 3
+first_layer_conv_width:
+  desc: null
+  value: 3
+first_layer_convs:
+  desc: null
+  value: 32
+img_height:
+  desc: null
+  value: 28
+img_width:
+  desc: null
+  value: 28

@@ -1,0 +1,24 @@
+{
+    "root": "/home/jovyan/CNN1",
+    "git": {
+        "remote": "https://github.com/aksj98/CNN1.git",
+        "commit": "9f2fa46300b5cb8c6bd40318ce06b613aa15ec5c"
+    },
+    "email": "akshaj.jain@gmail.com",
+    "startedAt": "2019-06-15T18:16:27.242800",
+    "host": "jupyter-aksj98",
+    "username": "jovyan",
+    "os": "Linux-4.14.119+-x86_64-with-debian-buster-sid",
+    "python": "3.7.3",
+    "gpu": "Tesla K80",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "program": "fashion_train.py",
+    "cuda": "10.1.168",
+    "args": [],
+    "state": "finished",
+    "heartbeatAt": "2019-06-15T18:19:11.687690",
+    "jobType": null,
+    "mode": "run",
+    "exitcode": 0
+}

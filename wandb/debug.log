@@ -1,88 +1,84 @@
-2019-06-15 17:43:40,087 DEBUG   MainThread:1588 [wandb_config.py:_load_defaults():81] no defaults not found in config-defaults.yaml
-2019-06-15 17:43:40,096 DEBUG   MainThread:1588 [cmd.py:execute():722] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
-2019-06-15 17:43:40,103 DEBUG   MainThread:1588 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
-2019-06-15 17:43:40,118 DEBUG   MainThread:1588 [run_manager.py:__init__():460] Initialized sync for fashion/mdf0yfoj
-2019-06-15 17:43:40,122 INFO    MainThread:1588 [run_manager.py:wrap_existing_process():1016] wrapping existing process 1580
-2019-06-15 17:43:40,123 WARNING MainThread:1588 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
-2019-06-15 17:43:40,125 DEBUG   MainThread:1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
-2019-06-15 17:43:40,216 DEBUG   MainThread:1588 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 31736
-2019-06-15 17:43:40,233 INFO    MainThread:1588 [run_manager.py:init_run():832] system metrics and metadata threads started
-2019-06-15 17:43:40,233 INFO    MainThread:1588 [run_manager.py:init_run():866] upserting run before process can begin, waiting at most 10 seconds
-2019-06-15 17:43:40,242 DEBUG   Thread-13 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-06-15 17:43:40,372 DEBUG   Thread-13 :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 413
-2019-06-15 17:43:40,377 INFO    Thread-13 :1588 [run_manager.py:_upsert_run():928] saving patches
-2019-06-15 17:43:40,378 DEBUG   Thread-13 :1588 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
-2019-06-15 17:43:40,385 DEBUG   Thread-13 :1588 [cmd.py:execute():722] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
-2019-06-15 17:43:40,391 DEBUG   Thread-13 :1588 [cmd.py:execute():722] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
-2019-06-15 17:43:40,396 DEBUG   Thread-13 :1588 [cmd.py:execute():722] Popen(['git', 'version'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
-2019-06-15 17:43:40,408 DEBUG   Thread-13 :1588 [cmd.py:execute():722] Popen(['git', 'merge-base', 'HEAD', 'c3f313b88aba2329488e410264514e282499a0ac'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
-2019-06-15 17:43:40,413 INFO    Thread-13 :1588 [run_manager.py:_upsert_run():930] saving pip packages
-2019-06-15 17:43:40,414 INFO    Thread-13 :1588 [run_manager.py:_upsert_run():932] initializing streaming files api
-2019-06-15 17:43:40,415 INFO    Thread-13 :1588 [run_manager.py:_upsert_run():939] unblocking file change observer, beginning sync with W&B servers
-2019-06-15 17:43:40,415 INFO    MainThread:1588 [run_manager.py:wrap_existing_process():1033] informing user process we are ready to proceed
-2019-06-15 17:43:40,416 INFO    MainThread:1588 [run_manager.py:_sync_etc():1116] entering loop for messages from user process
-2019-06-15 17:43:41,093 INFO    Thread-2  :1588 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/CNN1/wandb/run-20190615_174339-mdf0yfoj/diff.patch
-2019-06-15 17:43:41,094 INFO    Thread-2  :1588 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/CNN1/wandb/run-20190615_174339-mdf0yfoj/wandb-metadata.json
-2019-06-15 17:43:41,095 INFO    Thread-2  :1588 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/CNN1/wandb/run-20190615_174339-mdf0yfoj/requirements.txt
-2019-06-15 17:43:41,095 INFO    Thread-2  :1588 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/CNN1/wandb/run-20190615_174339-mdf0yfoj/config.yaml
-2019-06-15 17:43:42,418 INFO    MainThread:1588 [run_manager.py:_sync_etc():1139] received message from user process: {"save_policy": {"glob": "model-best.h5", "policy": "live"}}
-2019-06-15 17:43:42,846 DEBUG   Thread-6  :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-06-15 17:43:42,974 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:44,925 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:46,929 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:48,967 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:50,967 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:52,977 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:54,997 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:57,049 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:43:59,055 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:01,080 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:03,127 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:05,137 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:07,170 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:09,217 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:11,242 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:13,587 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:15,591 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:17,607 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:19,640 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:21,670 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:23,682 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:25,747 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:28,195 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:30,242 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:32,273 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:34,293 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:36,303 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:38,305 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:48,350 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:44:58,403 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:45:08,423 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:45:18,452 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:45:28,498 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:45:38,946 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:45:48,525 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:45:58,730 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:46:08,551 DEBUG   Thread-6  :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/mdf0yfoj/file_stream HTTP/1.1" 200 317
-2019-06-15 17:46:10,766 INFO    MainThread:1588 [run_manager.py:_sync_etc():1139] received message from user process: {"exitcode": 0}
-2019-06-15 17:46:10,766 INFO    MainThread:1588 [run_manager.py:_sync_etc():1225] closing log streams and sending exitcode to W&B
-2019-06-15 17:46:10,766 INFO    MainThread:1588 [run_manager.py:shutdown():946] shutting down system stats and metadata service
-2019-06-15 17:46:11,375 INFO    MainThread:1588 [run_manager.py:shutdown():955] stopping streaming files and file change observer
-2019-06-15 17:46:11,401 DEBUG   Thread-17 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-06-15 17:46:11,401 DEBUG   Thread-18 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-06-15 17:46:11,402 DEBUG   Thread-19 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-06-15 17:46:11,443 DEBUG   Thread-15 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-06-15 17:46:11,463 DEBUG   raven-sentry.BackgroundWorker:1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): sentry.io:443
-2019-06-15 17:46:11,537 DEBUG   Thread-19 :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 771
-2019-06-15 17:46:11,538 DEBUG   Thread-17 :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 761
-2019-06-15 17:46:11,542 DEBUG   Thread-17 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-06-15 17:46:11,543 DEBUG   Thread-18 :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 777
-2019-06-15 17:46:11,546 DEBUG   Thread-15 :1588 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 785
-2019-06-15 17:46:11,550 DEBUG   Thread-18 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-06-15 17:46:11,550 DEBUG   Thread-19 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-06-15 17:46:11,553 DEBUG   Thread-15 :1588 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-06-15 17:46:11,672 DEBUG   raven-sentry.BackgroundWorker:1588 [connectionpool.py:_make_request():393] https://sentry.io:443 "POST /api/1299483/store/ HTTP/1.1" 200 41
-2019-06-15 17:46:11,761 DEBUG   Thread-17 :1588 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/fashion/mdf0yfoj/diff.patch?Expires=1560620831&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=NQDbP2UJ4og%2B0QNeyaaIdIWU%2BsfRSgBccbN9Ueln0hIdauoMkUOl2GJhfokVpC0%2F%2FAn8gIsqELxp7pEJiDWU%2ByXusaxlYQ7%2B2sbOwEt6tRkgnf9f3h7GNYAMMzqM16J32po1HpFbvTkb%2BqdD8ZTm%2Bk0ffIsUk%2BCd2XMvGodjGgMNDHFw151Ny1ROrSSi1INVgEhq4Zj9ks8TGIqGKDa3M5QBH24Bo6T0AgxbCrDME2OkJsm3Se9T4ZqzJPk5iAm8KvC32ZY5sS5FJ6zpEOQP7RYhhWs%2BJlUPyNmSgnr1yZdlI3VHhbfbMfD3%2FuNE9W9EsQi%2FzlX59yrIcyc4JkV2oA%3D%3D HTTP/1.1" 200 0
-2019-06-15 17:46:11,875 DEBUG   Thread-19 :1588 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/fashion/mdf0yfoj/requirements.txt?Expires=1560620831&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=Mu16IlUnxRKkL7plnCTu4Gs1OnsNXhM4wVhEDF7yvl%2BzlUqFWek5635INT4HcHqtJHtfIzVnI1djjC3OT5lLfD8TBsnfyyjdJhd2%2F8Fvi%2FKxrWe0GC0IvGyEEBrguqom5SCgeGK%2F1WAYCHcH1UrTj%2FNO3PEKg4WeAE%2F7vIjH3bJObUaOBpv%2BTjuaCM97LX69ZiZPoQWB9SI%2FoYIAHJy0H7IW0T6bBYdGDmudmwt%2Bo%2BJTLyxjro54HWSxl%2FXJonNkonoav7e5wJD6kKQICaWcDNlBfURKSa1dShGKXXwBhHoM5NduMV37W6nRiFxz0U1zts8s0XKq5gNS3hgNeStWUQ%3D%3D HTTP/1.1" 200 0
-2019-06-15 17:46:11,921 DEBUG   Thread-18 :1588 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/fashion/mdf0yfoj/wandb-metadata.json?Expires=1560620831&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=exKiWS0MiXSraYyf5ExBg7gyStuvBgzioP%2B1gMQH2z69o97XBZtFamxFn4hHgMUFrkVDI2reXfmSjsjosl8jh1tTvV3lm0nRYIvRfM9dJvHLjm36QUeg2ngtilGQBgW%2BavdK%2BX8dfMJUmjKQT4u9j3vpZQ35%2Fl%2FBX20UMaVZQ6mGgjTNh0zkXtdhBKSeQaxFj7CxPpZd68QgODZrZJtkkMoHxS9fgaRqHmA7%2FVkmMOQusgHJVEPqsqrmwtxDckWtXbYQM%2BDdSk8kMXw5rALaH0PorTmBTHx07PAOaZKC%2FK%2BZZZRN9vznOO5QPwn3YEjzSvHowAzaBs%2Fi%2B7NpN27lMg%3D%3D HTTP/1.1" 200 0
-2019-06-15 17:46:12,152 DEBUG   Thread-15 :1588 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/fashion/mdf0yfoj/model-best.h5?Expires=1560620831&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=Oxq1zUGEst1JWhLw68lIkALzpbEJXsSV2KRjdyrSFwYL9zDk6pdY%2BwpVtfHsPNL8h0a%2Fr%2BeA%2FiUiczr4%2BtMFCLt5csBuLO%2B%2BDei4bTeej85EYsqCRl%2FNsmo4ZWsa%2B0OQcXzj73suqgHGKsZwFEErV%2FoIuXezcJ%2FvDqG1FS5%2F%2FEUvIoXoO7olAPUQkLAiM2OIwolk9Yq2sWRFE%2B%2FIYdIWW8k4HGrav6Vhzgx1J6PscuR7QGJuF4Ff967BI9rltn%2B9yCEKForcX2y4BVJBSt5p%2FL2Iuxx%2B2J%2FKQSdyLrkph0pvvnux5T%2BSR9KSdtbqGopmWnTGhNDZhC7GKVK%2FzbQ92Q%3D%3D HTTP/1.1" 200 0
+2019-06-15 18:19:56,848 DEBUG   MainThread:917 [wandb_config.py:_load_defaults():81] no defaults not found in config-defaults.yaml
+2019-06-15 18:19:56,995 DEBUG   MainThread:917 [cmd.py:execute():722] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
+2019-06-15 18:19:57,088 DEBUG   MainThread:917 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
+2019-06-15 18:19:57,101 DEBUG   MainThread:917 [run_manager.py:__init__():460] Initialized sync for fashion/k8522272
+2019-06-15 18:19:57,106 INFO    MainThread:917 [run_manager.py:wrap_existing_process():1016] wrapping existing process 909
+2019-06-15 18:19:57,107 WARNING MainThread:917 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2019-06-15 18:19:57,110 DEBUG   MainThread:917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
+2019-06-15 18:19:57,249 DEBUG   MainThread:917 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 31736
+2019-06-15 18:19:57,266 INFO    MainThread:917 [run_manager.py:init_run():832] system metrics and metadata threads started
+2019-06-15 18:19:57,266 INFO    MainThread:917 [run_manager.py:init_run():866] upserting run before process can begin, waiting at most 10 seconds
+2019-06-15 18:19:57,276 DEBUG   Thread-13 :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-15 18:19:57,420 DEBUG   Thread-13 :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 425
+2019-06-15 18:19:57,423 INFO    Thread-13 :917 [run_manager.py:_upsert_run():928] saving patches
+2019-06-15 18:19:57,424 DEBUG   Thread-13 :917 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
+2019-06-15 18:19:57,430 DEBUG   Thread-13 :917 [cmd.py:execute():722] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
+2019-06-15 18:19:57,450 DEBUG   Thread-13 :917 [cmd.py:execute():722] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
+2019-06-15 18:19:57,457 DEBUG   Thread-13 :917 [cmd.py:execute():722] Popen(['git', 'version'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
+2019-06-15 18:19:57,532 DEBUG   Thread-13 :917 [cmd.py:execute():722] Popen(['git', 'merge-base', 'HEAD', '9f2fa46300b5cb8c6bd40318ce06b613aa15ec5c'], cwd=/home/jovyan/CNN1, universal_newlines=False, shell=None)
+2019-06-15 18:19:57,538 INFO    Thread-13 :917 [run_manager.py:_upsert_run():930] saving pip packages
+2019-06-15 18:19:57,539 INFO    Thread-13 :917 [run_manager.py:_upsert_run():932] initializing streaming files api
+2019-06-15 18:19:57,539 INFO    Thread-13 :917 [run_manager.py:_upsert_run():939] unblocking file change observer, beginning sync with W&B servers
+2019-06-15 18:19:57,540 INFO    MainThread:917 [run_manager.py:wrap_existing_process():1033] informing user process we are ready to proceed
+2019-06-15 18:19:57,543 INFO    MainThread:917 [run_manager.py:_sync_etc():1116] entering loop for messages from user process
+2019-06-15 18:19:57,854 INFO    Thread-2  :917 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/CNN1/wandb/run-20190615_181956-k8522272/wandb-metadata.json
+2019-06-15 18:19:57,855 INFO    Thread-2  :917 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/CNN1/wandb/run-20190615_181956-k8522272/diff.patch
+2019-06-15 18:19:57,856 INFO    Thread-2  :917 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/CNN1/wandb/run-20190615_181956-k8522272/config.yaml
+2019-06-15 18:19:59,569 DEBUG   Thread-6  :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-15 18:19:59,672 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:19:59,761 INFO    MainThread:917 [run_manager.py:_sync_etc():1139] received message from user process: {"save_policy": {"glob": "model-best.h5", "policy": "live"}}
+2019-06-15 18:20:01,725 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:03,736 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:05,747 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:07,804 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:09,809 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:11,843 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:13,838 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:15,850 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:18,309 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:20,284 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:22,296 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:24,320 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:26,327 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:28,379 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:30,382 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:32,378 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:34,430 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:36,443 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:38,460 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:40,484 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:42,494 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:44,534 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:46,582 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:48,615 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:50,631 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:52,635 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:20:54,639 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:21:04,651 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:21:14,667 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:21:24,702 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:21:34,720 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:21:44,742 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:21:54,787 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:22:04,793 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:22:14,818 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:22:25,389 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:22:35,436 DEBUG   Thread-6  :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/fashion/k8522272/file_stream HTTP/1.1" 200 317
+2019-06-15 18:22:41,918 INFO    MainThread:917 [run_manager.py:_sync_etc():1139] received message from user process: {"exitcode": 0}
+2019-06-15 18:22:41,918 INFO    MainThread:917 [run_manager.py:_sync_etc():1225] closing log streams and sending exitcode to W&B
+2019-06-15 18:22:41,919 INFO    MainThread:917 [run_manager.py:shutdown():946] shutting down system stats and metadata service
+2019-06-15 18:22:42,435 INFO    MainThread:917 [run_manager.py:shutdown():955] stopping streaming files and file change observer
+2019-06-15 18:22:42,452 DEBUG   Thread-17 :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-15 18:22:42,452 DEBUG   Thread-18 :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-15 18:22:42,462 DEBUG   Thread-16 :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-15 18:22:42,544 DEBUG   Thread-16 :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 759
+2019-06-15 18:22:42,553 DEBUG   Thread-18 :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 757
+2019-06-15 18:22:42,554 DEBUG   Thread-16 :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-15 18:22:42,561 DEBUG   Thread-17 :917 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 763
+2019-06-15 18:22:42,585 DEBUG   Thread-18 :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-15 18:22:42,599 DEBUG   raven-sentry.BackgroundWorker:917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): sentry.io:443
+2019-06-15 18:22:42,599 DEBUG   Thread-17 :917 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-15 18:22:42,819 DEBUG   raven-sentry.BackgroundWorker:917 [connectionpool.py:_make_request():393] https://sentry.io:443 "POST /api/1299483/store/ HTTP/1.1" 200 41
+2019-06-15 18:22:42,921 DEBUG   Thread-17 :917 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/fashion/k8522272/wandb-metadata.json?Expires=1560623022&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=Wx5beXz9kmevMqUjpALnH4y9zOi%2FVtaU5h995e2Lgq1IJVnDUnPyw0Zxo6Agj%2FG1aXz0lWzsvh9U9E5laK5BeKsvYHJL3XjooY0LbDH3ctosOX5bmjTi0xW0Ks0bba0FqH80fD46YAwu1vhrFtDfqSIlZ3QWHE3CfCyk9PJP1W7cNLWG9EiHITyLYXOXy2ToExTYqbGE7dU5lgtRU320SGnujCuTyJunZcv0LOiqiE3rAXeYpMmo6VB6geWI0uWS31TAtXXMO7fy9iIWK1hzdEVAtPeL7ohskydxF6DbsDRFn56gBShb%2FM6WfvJYKg6HU3JWt5xGPxnRIWWAkgGs%2Bw%3D%3D HTTP/1.1" 200 0
+2019-06-15 18:22:43,002 DEBUG   Thread-18 :917 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/fashion/k8522272/diff.patch?Expires=1560623022&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=OXrunWKdRTK1rG0PQobLF7BIrndWAuS%2FnNQBelrJaRk%2FN9zJpbRLqj6BghNlGnHOCuKGdor3NZOkkg5CrQgq%2BjuTrYHWgZwSr45%2FsPL2uWk6q0f%2BWbsIbXfeeR96HnMFBwLSuwm6uMFBOjqnHRHJEeM0jrSQVAIP2VCtEtCyWZGmoi%2BUS12b%2BixcNzj7hOuDsSEbcDvS9SzPcvPU4LEtCkT8NzfUy4ILUC0qaMmAtmJFTu4ea1YEhCkz0hrPZmqcmosxSZTt%2BftaCkE%2Fxh9sbFF%2FHCT4GMfNvGi2oKp2X1RCOS2eNTTKKTv0qidLRnfyL40FNZNqxmc1w15eqx5JRg%3D%3D HTTP/1.1" 200 0
+2019-06-15 18:22:43,110 DEBUG   Thread-16 :917 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/fashion/k8522272/model-best.h5?Expires=1560623022&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=apTQxLMBT0Idp0EGi1H%2FmdE41cjgPEKzOuo0NSiTGgR4tWC4qhFiWWjY7hgRAUEfh1tJSVw3vbKfVUn691WY2d3lIeqaDg5VKje14%2Fcdfrv%2BdUY%2BCPPBGihrbCak3Bm1QOjlbPAUwypFLvnYItlsQnOU57aRd2WL4lsL8Lo9%2BzVbrgvsOMNWQMg361hheNAPxAK%2BbOLlgoMjtUM8xcLuorSAmAQ5IGTydD%2FfVNOaaWHEZNJ4av02Ppw0QeNDoEeLKWNHBa07JUy575EpgkRpJkys%2BiFPdu6U0c3fQtfnOnNlOXOCpu6PKhldoKBXRcJkqZvYiuVnyBagz3HQj31qAg%3D%3D HTTP/1.1" 200 0
